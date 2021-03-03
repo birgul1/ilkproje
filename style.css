@@ -1,0 +1,334 @@
+@charset "utf-8"
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body{
+	font-size: 16px;
+	font-family: 'pt_sansregular';
+}
+.wrapper{
+	width: 100%;
+}
+.banner{
+	width: 100%;
+	height: 65vh;
+	background-position: center center; 
+	background: url("images/slide1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	box-sizing: border-box;
+	display: flex;
+}
+header{
+	margin: 0 auto;
+	position: absolute;
+	width: 100%;
+	align-self: flex-start;
+}
+header a img{
+	position: absolute;
+	margin-left: 40px;
+	top: 30px;
+	float: left;
+}
+header nav.nav ul{
+
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: #828282;
+	position: relative;
+	float: right;
+	right: 20px;
+	top:0;	
+	
+}
+header nav.nav ul li{
+	display: inline-block;
+	
+}
+header nav.nav ul li a{
+	
+	text-decoration: none;
+	color: #44003E;
+	font-weight: 100;
+    text-transform: uppercase;
+    box-shadow:0 0 15px rgba(0,0,0,.6);
+    padding: 15px;
+    display: block;
+}
+header nav.nav ul li a:hover{
+	color: white;
+	transition: color 0.2s ease-in-out;
+	text-decoration: underline overline;
+}
+nav div{
+	background: #828282;
+	color: #3B3B3B;
+	font-size: 25px;
+	padding: 10px;
+	float:right; 
+	cursor: pointer;
+	display: none;
+}
+section.bolum1{
+	width: 100%;
+	background: #f5f5f5;
+	padding: 100px 0;
+	text-align: center;
+	margin-bottom: 0.5em; 
+}
+.container{
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.bolum1 .kutu{
+	flex-basis: 300px;
+	flex-shrink: 0;
+	flex-grow: 1;
+	background: #fff;
+	text-align: center;
+	padding: 20px 0;
+	margin-right: 20px;
+	align-self: stretch; 
+}
+.bolum1 .kutu h2{
+	color: black;
+	font-size: 1.3em;
+	font-weight: 700; 
+	text-transform: uppercase;	
+}
+.bolum1 .kutu p{
+	color: black;
+	font-size: 1em;
+	font-weight: 100;
+	padding: 5px 20px 20px 20px;
+	line-height: 1.5em;
+
+}
+.bolum1 .kutu  a{
+	padding: 10px 20px;
+    background: #734B8E;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.bolum1 .kutu h3{
+	font-size: 40px;
+	font-weight: 700;
+	color: #431155;
+	line-height: 50px;
+	margin-top: 20px;
+}
+
+.banner1{
+	width: 100%;
+	height: 70vh;
+	background-position: center center; 
+	background: url("images/8.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	box-sizing: border-box;
+	display: flex;
+}
+.banner2{
+	width: 100%;
+	height: 60vh;
+	background-position: center center; 
+	background: url("images/resim2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	box-sizing: border-box;
+	display: flex;
+}
+
+.kutu img{
+	height: 200px;
+	width: 200px;
+	transition: all is ease-in-out;
+	vertical-align: center;
+}
+.kutu img:hover{
+	transform: scale(2);
+}
+.banner3{
+	width: 100%;
+	height: 25vh;
+	background-position: center center; 
+	background: #908494;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	box-sizing: border-box;
+	display: flex;
+}
+.kutu a i{
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+footer{
+	width: 100%;
+	background: #D8D8D8;
+	padding: 30px 0;
+}
+footer .container{
+	margin-top: 50px;
+	border-bottom: 1px solid #979797;
+}
+footer .container .kutu{
+	margin-left: 20px;
+	width: 200px; 
+	flex-basis: 100%;
+    margin: 18px 20px;
+    text-align: center;
+}
+footer .container .kutu a{
+	color: #4F3500;
+	text-decoration: none;
+	font-size: 0.9em;
+	line-height: 2.5em;
+}
+footer .container .kutu a:hover{
+     text-decoration: underline;
+}
+.sosyal{
+	max-width: 1000px;
+	margin: 0 auto;
+
+}
+footer .lisans{
+	width: 100%;
+	margin: 10px auto;
+}
+footer .lisans p{
+	color: black;
+	float: left;
+	margin-top: 8px;
+	display: inline-block; 
+}
+footer .icons{
+	float: right;
+}
+footer .icons i{
+	text-align: center;
+	width: 25px;
+	height: 25px;
+	padding: 8px;
+	border-radius: 50%;
+	font-size: 1.5em;
+	cursor: pointer;
+	color: #F2003D;
+	background: black;
+}
+@media screen and(max-width: 980px){
+	.banner{
+		height: 50vh;
+	}
+	.banner1{
+		height: 50vh;
+	}
+	.banner2{
+		height: 50vh;
+	}
+	.banner3{
+		height: 20vh;
+	}
+	.bolum1 .kutu{
+		flex-basis: 50%;
+		margin-top:30px;
+	}
+	footer .container .kutu{
+      flex-basis: 40%;
+      margin: 10px 20px;
+    }
+    .bolum1 .kutu{
+	flex-basis: 300px;
+	flex-shrink: 0;
+	flex-grow: 1;
+	background: #fff;
+	text-align: center;
+	padding: 20px 0;
+	margin-right: 20px;
+	align-self: stretch; 
+}
+
+  .kutu img{
+	height: 350px;
+	width: 350px;
+	transition: all is ease-in-out;
+	vertical-align: center;
+    }
+}
+@media screen and (max-width: 600px){
+	.banner{
+		height: 30vh;
+	}
+	.banner1{
+		height: 30vh;
+	}
+	.banner2{
+		height: 30vh;
+	}
+	.banner3{
+		height: 15vh;
+	}
+    .kutu img{
+	height: 75px;
+	width: 75px;
+	transition: all is ease-in-out;
+    }
+    .kutu img:hover{
+	transform: scale(2);
+}
+   nav div{
+		display: block;
+	}
+	nav ul{
+		display: none;
+		position: static;
+		background: #B9B9B9;
+	}
+	header nav.nav ul li{
+		display: block;
+	}
+	
+	footer .container .kutu{
+		flex-basis: 100%;
+		margin: 18px 20px;
+		text-align: center;
+	}
+    footer .icons{
+    	clear: both;
+    	float: none;
+    }
+    footer .lisans p{
+    	float: none;
+    	margin: 20px auto;
+    }
+    .sosyal{
+    	text-align: center;
+    }
+    footer .icons i{
+    	margin-top:20px; 
+    }
+    header nav.nav ul li a{
+        display: block;
+        line-height: 10px;
+        padding-left: 30px;
+        font-weight: bold;
+    
+    }
+    
+  
+
+}
